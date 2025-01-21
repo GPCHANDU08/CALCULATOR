@@ -1,0 +1,203 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: 
+      linear-gradient(135deg, rgba(44, 62, 80, 0.8), rgba(52, 73, 94, 0.8)), /* Gradient overlay */
+      url('https://github.com/GPCHANDU08/CALCULATOR/blob/main/background1.jpg?raw=true'); /* Path to the background image */
+    background-size: cover; /* Ensure image covers the entire background */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center; /* Center the image */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  #header {
+    position: absolute; 
+    top: 10px; 
+    left: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 40px); 
+  }
+  #header > p {
+    font-size: 46px;
+    font-weight: bold; 
+    margin: 0; 
+    background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1);
+    background-size: 200%; 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    color: transparent; 
+    animation: textGradient 3s infinite;
+  }
+  @keyframes textGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  /* Calculator styling */
+  .calculator {
+    background: transparent;
+    border-radius: 15px;
+    align-items: center ;
+    box-shadow: 0 10px 20px rgb(255, 255, 255);
+    width: 350px;
+    padding: 20px;
+  }
+  
+  /* Display styling */
+  #display {
+    width: 100%;
+    height: 80px;
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-align: right;
+    background: #64a9ed;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: inset 0px 5px 10px rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons grid layout */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  
+  /* Default button styling */
+  button {
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    box-shadow: 0px 4px 6px rgb(255, 255, 255);
+  }
+  
+  /* Button hover and active effects */
+  button:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Button colors */
+  button:nth-child(1) { 
+    background: #ff3f29;
+    color: #fff;
+  }
+  
+  button:nth-child(2) { 
+    background: #96291d;
+    color: #fff;
+  }
+  
+  button:nth-child(3),
+  button:nth-child(4) { 
+    background: #8e44ad;
+    color: #fff;
+  }
+
+  button:nth-child(5),
+  button:nth-child(6),
+  button:nth-child(7),
+  button:nth-child(8) { 
+    background: #3498db;
+    color: #fff;
+  }
+  
+  button:nth-child(9),
+  button:nth-child(10),
+  button:nth-child(11),
+  button:nth-child(12) { 
+    background: #27ae60;
+    color: #fff;
+  }
+  
+  button:nth-child(13),
+  button:nth-child(17),
+  button:nth-child(21),
+  button:nth-child(25),
+  button:nth-child(26){ 
+    background: #f1c40f;
+    color: #fff;
+  }
+  
+  button:nth-child(27) {
+    background: #e67e22;
+    color: #fff;
+  }
+  
+  button:nth-child(29) { 
+    background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1);
+    background-size: 300%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.8rem;
+    grid-column: span 4;
+    animation: gradientShift 3s infinite;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Add a smooth gradient animation */
+
+  #footer-container {
+    position: fixed; 
+    bottom: 20px; 
+    right: 40px; 
+    padding: 10px;
+    border-radius: 15px; 
+    background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1); 
+    background-size: 200%;
+    animation: gradientShift 3s infinite; 
+  }
+  
+  #footer {
+    background: #1e272e; 
+    border-radius: 10px;
+    padding: 10px; 
+    display: flex; 
+    gap: 10px; 
+  }
+  
+  #footer a img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.2s; 
+  }
+  
+  #footer a img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Add gradient animation */
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  
+  
+
+  
